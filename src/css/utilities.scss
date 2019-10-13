@@ -1,0 +1,26 @@
+#utility-bar {
+  span > :not(:last-child) { margin-right: 2rem; }
+  #timezone { font: bold 1.5rem monospace; > svg { cursor: pointer; }}
+}
+
+.btn {
+  color: white;
+  padding: 1rem;
+  font: bold 1.5rem monospace;
+  border-radius: 0.5rem;
+  &-gn { background-color: #08A045; }
+  &-rd { background-color: #F26430; }
+  &-bl { background-color: #6761A8; }
+  &-tl { background-color: #43BCCD; }
+  &-og { background-color: #DB9D47; }
+  &-gr { background-color: #BBB; cursor: default; box-shadow: none !important; }
+  cursor: pointer;
+  &:active { box-shadow: none; }
+}
+
+.shadowed {
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.5);
+  &:hover {
+    box-shadow: 0 0.1rem 0.75rem rgba(0,0,0,0.5);
+  }
+}

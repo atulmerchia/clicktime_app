@@ -1,0 +1,9 @@
+html { min-height: 100%; display: flex; background-color: #ECEBFF}
+body, #root { flex: 1; display: flex; }
+#root { padding: 2% 10%; }
+
+.vbox { display: flex; flex-direction: column; }
+.hbox { display: flex; flex-direction: row; }
+.center { justify-content: center; align-items: center; text-align: center; }
+.split { justify-content: space-between; }
+.flex-fill { flex: 1; }

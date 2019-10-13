@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "sevenseg";
+  src: url("../assets/sevenseg.ttf");
+}
+
+:global {
+  @import "context-menu.scss";
+  @import "modal.scss";
+  @import "setup.scss";
+  @import "stopwatch.scss";
+  @import "table.scss";
+  @import "utilities.scss";
+}

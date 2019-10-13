@@ -1,0 +1,27 @@
+#data-table {
+  thead { font-family: helvetica; font-size: 1.5rem; }
+  font-family: courier new;
+  font-size: 1.2rem;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0rem 1.2rem;
+  cursor: default;
+
+  tbody tr {
+    @extend .shadowed;
+    &:nth-of-type(2n) { background-color: #F4F4F4; }
+    &:nth-of-type(2n+1) { background-color: white; }
+    min-width: 70rem;
+    transition: background-color 0.2s ease;
+  }
+
+  td {
+    padding: 1rem 0;
+    width: 11%;
+  }
+}
+
+#no-data {
+  font: 800% sevenseg;
+}

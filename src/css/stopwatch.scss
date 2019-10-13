@@ -1,0 +1,15 @@
+#clock-wrapper {
+  padding: 5%;
+  margin-top: 3%;
+  background: #F4F4F4;
+  border: 5px solid grey;
+
+  #clock-text {
+    font-family: sevenseg;
+    width: 100%;
+    #main-time { font-size: 800%; align-self: stretch; }
+    #secondary-time { font-size: 250%; }
+  }
+
+  .btn { font-size: 3rem; }
+}

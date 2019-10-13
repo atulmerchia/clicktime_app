@@ -1,0 +1,33 @@
+#modal-cover {
+  position: fixed;
+  z-index: 1000;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 100vh; width: 100vw;
+  background-color: rgba(0,0,0,0.6);
+
+  #modal-content {
+    background: white;
+    padding: 2rem;
+    &, input { font: 1.4rem monospace; }
+    table {
+      border-spacing: 1rem 0.5rem;
+      th { font-size: 1.8rem; }
+      td:first-of-type { color: grey; }
+      input {
+        border: none;
+        border-bottom: 2px solid lightgrey;
+        transition: border-color 0.4s ease, background-color 0.4s ease;
+        text-align: right;
+
+        &.valid-false { border-bottom-color: red !important; background-color: #FEE; }
+
+        &:focus { outline: none; border-bottom: 2px solid #43BCCD; }
+      }
+    }
+
+    #save {
+      align-self: stretch;
+      margin-top: 1rem;
+    }
+  }
+}

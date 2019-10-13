@@ -1,0 +1,15 @@
+#context-menu {
+  position: absolute;
+  z-index: 999;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 1.25rem;
+
+  > div {
+    padding: 0.5rem;
+    background-color: white;
+    &:hover { background-color: #E4E4E4; }
+    &:not(:last-child) { border-bottom: 1px solid grey; }
+  }
+}
